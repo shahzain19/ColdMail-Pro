@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import {
-  Twitter,
   Github,
   Linkedin,
   Mail,
