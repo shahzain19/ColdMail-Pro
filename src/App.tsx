@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useAuth } from "./hooks/useAuth";
 import { Dashboard } from "./pages/Dashboard";
 import { AuthPage } from "./pages/Auth";
-import LeadGenerator from "./pages/LeadGenerator";
 import Footer from "./components/Footer";
 import Home from "./pages/Home"; // ✅ Import Home Page
 import About from "./pages/About";
@@ -29,10 +28,6 @@ const App = () => {
         <Route
           path="/dashboard"
           element={user ? <Dashboard /> : <Navigate to="/auth" />}
-        />
-        <Route
-          path="/leads"
-          element={user ? <LeadGenerator /> : <Navigate to="/auth" />}
         />
 
         <Route path="/about" element={<About />} />
